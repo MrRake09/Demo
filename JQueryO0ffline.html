@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Offline jQuery Mobile Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Local jQuery Mobile CSS -->
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+
+    .custom-header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 1.2em;
+      font-weight: 600;
+      border-bottom: 1px solid #002244;
+    }
+
+    .custom-footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.9em;
+    }
+
+    .ui-navbar ul li a {
+      background-color: #e0e0e0 !important;
+      color: #003366 !important;
+      border: none !important;
+      font-weight: 500;
+    }
+
+    .ui-navbar .ui-btn-active {
+      background-color: #003366 !important;
+      color: white !important;
+    }
+
+    .hero-text {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+      margin: 20px auto;
+      border-radius: 4px;
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      color: #003366;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .ui-btn-primary {
+      background-color: #003366 !important;
+      color: white !important;
+      border: none;
+      font-weight: 500;
+      text-shadow: none !important;
+    }
+
+    .form-inputs input,
+    .form-inputs textarea {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 12px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .form-inputs label {
+      font-weight: 500;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .form-inputs input[type="submit"] {
+      background-color: #003366;
+      color: white;
+      border: none;
+      font-weight: 500;
+      border-radius: 4px;
+      padding: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header" class="custom-header">
+    <h1>My Mobile Site</h1>
+  </div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" class="ui-btn-active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="hero-text">
+      <h1>Welcome</h1>
+      <p>Professional jQuery Mobile website — fully offline.</p>
+      <a href="#services" class="ui-btn ui-btn-primary">Our Services</a>
+    </div>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <h4>&copy; 2025 MyMobileSite</h4>
+  </div>
+</div>
+
+<!-- About Page -->
+<div data-role="page" id="about">
+  <div data-role="header" class="custom-header">
+    <h1>About</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+  <div role="main" class="ui-content">
+    <p>We specialize in professional, clean, and mobile-ready websites.</p>
+  </div>
+  <div data-role="footer" class="custom-footer">
+    <h4>&copy; 2025 MyMobileSite</h4>
+  </div>
+</div>
+
+<!-- Services Page -->
+<div data-role="page" id="services">
+  <div data-role="header" class="custom-header">
+    <h1>Services</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+  <div role="main" class="ui-content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#">Website Design</a></li>
+      <li><a href="#">Mobile Apps</a></li>
+      <li><a href="#">SEO Services</a></li>
+    </ul>
+  </div>
+  <div data-role="footer" class="custom-footer">
+    <h4>&copy; 2025 MyMobileSite</h4>
+  </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+  <div data-role="header" class="custom-header">
+    <h1>Contact</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+  </div>
+  <div role="main" class="ui-content">
+    <form class="form-inputs">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Your Name">
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Your Email">
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="Your Message"></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+  <div data-role="footer" class="custom-footer">
+    <h4>&copy; 2025 MyMobileSite</h4>
+  </div>
+</div>
+
+<!-- Local JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+
+</body>
+</html>
